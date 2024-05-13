@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>background</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Select a color</h1>
+  <input type="color" id="color">
+  <script>
+    seletor = document.querySelector('#color');
+
+    seletor.addEventListener('change', function() {
+      alteraCor();
+    });
+
+    function alteraCor() {
+      document.body.style.backgroundColor = seletor.value;
+    }
+  </script>
+</body>
+</html>
